@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="main.css">
+
+    <!--
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    -->
+
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <body onload="reset()">
+    <h1 class="display-1">Tic-Tac-Toe</h1>
+    <div id="message"></div>
+    
+    <div class="container">
+      <div class="row row-1">
+        <div class="col">
+          <button id="0" class="btn btn-outline responsive-width" type="button" onclick="makeTurn('0')" onmouseover="showHover('0')" onmouseout="removeHover('0')"></button>
+        </div>
+        <div class="col">
+          <button id="1" class="btn btn-outline responsive-width" type="button" onclick="makeTurn('1')" onmouseover="showHover('1')" onmouseout="removeHover('1')"></button>
+        </div>
+        <div class="col">
+          <button id="2" class="btn btn-outline responsive-width" type="button" onclick="makeTurn('2')" onmouseover="showHover('2')" onmouseout="removeHover('2')"></button>
+        </div>
+      </div>
+
+      <div class="row row-2">
+        <div class="col">
+          <button id="3" class="btn btn-outline responsive-width" type="button" onclick="makeTurn('3')" onmouseover="showHover('3')" onmouseout="removeHover('3')"></button>
+        </div>
+        <div class="col">
+          <button id="4" class="btn btn-outline responsive-width" type="button" onclick="makeTurn('4')" onmouseover="showHover('4')" onmouseout="removeHover('4')"></button>
+        </div>
+        <div class="col">
+          <button id="5" class="btn btn-outline responsive-width" type="button" onclick="makeTurn('5')" onmouseover="showHover('5')" onmouseout="removeHover('5')"></button>
+        </div>
+      </div>
+
+      <div class="row row-3">
+        <div class="col">
+          <button id="6" class="btn btn-outline responsive-width" type="button" onclick="makeTurn('6')" onmouseover="showHover('6')" onmouseout="removeHover('6')"></button>
+        </div>
+        <div class="col">
+          <button id="7" class="btn btn-outline responsive-width" type="button" onclick="makeTurn('7')" onmouseover="showHover('7')" onmouseout="removeHover('7')"></button>
+        </div>
+        <div class="col">
+          <button id="8" class="btn btn-outline responsive-width" type="button" onclick="makeTurn('8')" onmouseover="showHover('8')" onmouseout="removeHover('8')"></button>
+        </div>
+      </div>
+      
+      <div class="row row-4">
+        <div class="col">
+          <button class="btn btn-dark responsive-width" type="button" onclick="setPlayer('X')">X</button>
+        </div>
+        <div class="col">
+            <button id="reset" class="btn btn-secondary responsive-width" type="button" onclick="reset()">Reset</button>
+      </div>
+        <div class="col">
+          <button class="btn btn-dark responsive-width" type="button" onclick="setPlayer('O')">O</button>
+        </div>
+      </div>
+
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
