@@ -18,7 +18,7 @@ $enable-responsive-font-sizes: true;
 
 #reset {
     opacity: 1;
-    font-size: 5vw;
+    font-size: 3vw;
 }
 
 #message{  text-align: center; }
@@ -45,6 +45,7 @@ $enable-responsive-font-sizes: true;
     -moz-transition: opacity .25s ease-in-out;
     -webkit-transition: opacity .25s ease-in-out;
 }
+.mySpan{ vertical-align: top;}
 .btn-dark{ opacity: 1;}
 .btn:hover {
     opacity: 1;
@@ -55,7 +56,7 @@ $enable-responsive-font-sizes: true;
 .col {
     border: 1px solid black;
     border-radius: .25rem;
-    padding-bottom: 30%;
+    padding-bottom: 33%;
     margin: 2px;
 }
 .responsive-width { font-size: 8vw;}

@@ -9666,7 +9666,7 @@ h3 {
 
 #reset {
   opacity: 1;
-  font-size: 5vw;
+  font-size: 3vw;
 }
 
 #message {
@@ -9702,6 +9702,10 @@ h3 {
   -webkit-transition: opacity 0.25s ease-in-out;
 }
 
+.mySpan {
+  vertical-align: top;
+}
+
 .btn-dark {
   opacity: 1;
 }
@@ -9718,7 +9722,7 @@ h3 {
 .col {
   border: 1px solid black;
   border-radius: 0.25rem;
-  padding-bottom: 30%;
+  padding-bottom: 33%;
   margin: 2px;
 }
 
