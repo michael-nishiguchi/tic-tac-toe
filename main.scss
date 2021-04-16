@@ -8,71 +8,93 @@ $extra-spacing: 25px;
 $hover-color: #6c757d;
 
 $enable-responsive-font-sizes: true;
-*{
-    box-sizing: border-box;
+* {
+	box-sizing: border-box;
 }
 .container {
-    width: $desktop-width;
-    max-width: $desktop-max-width;
+	width: $desktop-width;
+	max-width: $desktop-max-width;
 }
 
 #reset {
-    opacity: 1;
-    font-size: 3vw;
+	opacity: 1;
+	font-size: 3rem;
 }
 
-#message{  text-align: center; }
+#message {
+	text-align: center;
+}
 
-.display-1 { 
-    font-size: 4rem; 
-    text-align: center;
+.display-1 {
+	font-size: 4rem;
+	text-align: center;
 }
 
 //Rows
-.row-1.btn:focus, .row-2.btn:focus, .row-3.btn:focus{ color: black; }
-.row-3{ padding-bottom: $extra-spacing; }
-.row-4 .btn { color: white; }
+.row-1.btn:focus,
+.row-2.btn:focus,
+.row-3.btn:focus {
+	color: black;
+}
+.row-3 {
+	padding-bottom: $extra-spacing;
+}
+.row-4 .btn {
+	color: white;
+}
 
 //Buttons
 .btn {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    padding: 0;
-    opacity: 0;
-    transition: opacity .25 ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	padding: 0;
+	opacity: 0;
+	transition: opacity .25 ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
 }
-.mySpan{ vertical-align: top;}
-.btn-dark{ opacity: 1;}
+.mySpan {
+	vertical-align: top;
+}
+.btn-dark {
+	opacity: 1;
+}
 .btn:hover {
-    opacity: 1;
-    color: $hover-color;
+	opacity: 1;
+	color: $hover-color;
 }
-.row-4 .btn:hover { color: white;}
+.row-4 .btn:hover {
+	color: white;
+}
 
 .col {
-    border: 1px solid black;
-    border-radius: .25rem;
-    padding-bottom: 33%;
-    margin: 2px;
+	border: 1px solid black;
+	border-radius: .25rem;
+	padding-bottom: 33%;
+	margin: 2px;
 }
-.responsive-width { font-size: 8vw;}
-
+.col .responsive-width {
+	font-size: 4rem;
+}
 
 @media (max-width: 500px) {
-    .container{ width: $mobile-width; }
+	.container {
+		width: $mobile-width;
+	}
 
-    #reset { font-size: 8vw;}
+	#reset,
+	.responsive-width {
+		//font-size: 8vw;
+		font-size: 2rem;
+	}
 
-    .display-1 { font-size: 3rem; }
+	.display-1 {
+		font-size: 3rem;
+	}
 
-    #message{
-        margin-bottom: $extra-spacing; }
-}
-
-@media (min-width: 500px) {
-    #message{ font-size: 1.5rem; }
+	#message {
+		margin-bottom: $extra-spacing;
+	}
 }

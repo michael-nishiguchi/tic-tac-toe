@@ -9666,7 +9666,7 @@ h3 {
 
 #reset {
   opacity: 1;
-  font-size: 3vw;
+  font-size: 3rem;
 }
 
 #message {
@@ -9678,7 +9678,9 @@ h3 {
   text-align: center;
 }
 
-.row-1.btn:focus, .row-2.btn:focus, .row-3.btn:focus {
+.row-1.btn:focus,
+.row-2.btn:focus,
+.row-3.btn:focus {
   color: black;
 }
 
@@ -9726,8 +9728,8 @@ h3 {
   margin: 2px;
 }
 
-.responsive-width {
-  font-size: 8vw;
+.col .responsive-width {
+  font-size: 4rem;
 }
 
 @media (max-width: 500px) {
@@ -9735,8 +9737,9 @@ h3 {
     width: 90%;
   }
 
-  #reset {
-    font-size: 8vw;
+  #reset,
+.responsive-width {
+    font-size: 2rem;
   }
 
   .display-1 {
@@ -9745,11 +9748,6 @@ h3 {
 
   #message {
     margin-bottom: 25px;
-  }
-}
-@media (min-width: 500px) {
-  #message {
-    font-size: 1.5rem;
   }
 }
 

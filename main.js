@@ -122,7 +122,6 @@ function checkFilled(cell) {
     else { return true; }
 }
 
-//help from freecodecamp https://github.com/beaucarnes/fcc-project-tutorials/blob/master/tictactoe/7/script.js
 function checkWin(board, player){   
     
     let cellsPlayed = board.reduce((a, e, i) => (e === player) ? a.concat(i) : a, []);
